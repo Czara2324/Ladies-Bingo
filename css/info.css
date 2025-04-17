@@ -14,7 +14,7 @@ body {
 .banner {
     display: flex;
     border-radius: 2rem;
-    padding-top: 1rem;
+   margin-top:1rem;
 }
 .three-col {
     display:flex;
@@ -56,3 +56,22 @@ button:hover {
     background-color: #d13364;
     color: white;
 }
+
+@media (max-width:500px) {
+    .banner {
+        width:90%;
+        margin: auto;
+    }
+    .three-col {
+        flex-direction: column;
+        align-items: center;
+    }
+    .three-col img {
+        width: 80%;
+    }
+    button {
+
+        margin: auto;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
