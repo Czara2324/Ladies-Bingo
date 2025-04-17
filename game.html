@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Shrikhand&display=swap" rel="stylesheet">
+    <title>Ladies Bingo Game</title>
+</head>
+<body>
+    <h1>Let's Play Ladies Bingo</h1>
+    <p>But first! Select a color to mark your squares:</p>
+    <input type="color" id="color-picker" value="#ff99cc">
+    <div id="header">BINGO</div>
+    <div id="bingo-board"></div>
+    
+
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <div id="modal-message"></div>
+            <button onclick="restartGame()">Play Again</button>
+            <a href="info.html">
+                <button style="margin-left:10px;">Read more</button>
+            </a>
+        </div>
+    </div>
+
+    <audio id="click-sound" src="/media/click.wav"></audio>
+    <audio id="win-sound" src="/media/win.wav"></audio>
+    <audio id="lose-sound" src="/media/lose.wav"> </audio>
+    <audio id="bg-music" src="/media/bg-music.mp3" controls loop="loop"></audio>
+
+    <script src="./js/game.js"></script>
+    
+    </script>
+</body>
+</html>
