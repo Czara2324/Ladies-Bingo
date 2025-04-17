@@ -3,7 +3,7 @@ const phrases = [
     "Can dance", "Has traveled abroad", "Gets a mani/pedi regularly", "Enjoys baking", "Can Sing",
     "Loves rom-coms", "Has a career", "A mom", "Married", "Single",
     "Owns a home", "Eats a healthy diet", "Knows how to bake", "Knows how to drive", "Earns more than $60k",
-    "Goes to hair salon regularly", "Has a healthy weight", "Loves to dress up", "Works Out regularly", "Loves to socialize","Doesn't use dishwasher", "Has a pet","Has a hobby","Goes to the gym","Has long hair",
+    "Goes to hair salon regularly", "Has a healthy weight", "Loves to dress up", "Works Out regularly", "Loves to socialize","Doesn't use dishwasher", "Has a pet","Has a hobby","Goes to the gym","Has long hair","Plays a musical instrument","Does Sports"
 ];
 
 let selectedColor = document.getElementById('color-picker').value;
@@ -17,7 +17,7 @@ const clickSound = document.getElementById('click-sound');
 const winSound = document.getElementById('win-sound');
 const loseSound = document.getElementById('lose-sound');
 const bgMusic = document.getElementById('bg-music');
-bgMusic.volume = 0.4; 
+bgMusic.volume = 0.3; 
 
 document.addEventListener('click', () => {
     if (bgMusic.paused) {
