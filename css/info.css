@@ -5,7 +5,9 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
     height: auto;
     display:flex;
     flex-direction:column;
@@ -13,6 +15,7 @@ body {
 }
 .banner {
     display: flex;
+    justify-content: center;
     border-radius: 2rem;
    margin-top:1rem;
 }
